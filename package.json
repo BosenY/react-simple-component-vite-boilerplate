@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "prepublishOnly": "npm run build",
+    "preview": "vite preview",
+    "release": "quick-publish"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -17,6 +19,7 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react-swc": "^3.0.0",
+    "quick-publish": "^0.7.1",
     "sass": "^1.62.0",
     "typescript": "^4.9.3",
     "vite": "^4.2.0",
