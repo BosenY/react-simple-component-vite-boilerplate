@@ -13,8 +13,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/lib/index.tsx'),
-      name: 'ReactComName',
-      fileName: (format) => `react-com-name.${format}.js`
+      name: 'ReactComponent',
+      fileName: (format) => `react-component.${format}.js`
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
